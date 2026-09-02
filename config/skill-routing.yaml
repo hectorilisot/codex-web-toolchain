@@ -1,0 +1,303 @@
+version: "rc1"
+
+purpose: >
+  Support Codex in recommending the most appropriate primary creative route
+  after reading the project briefing. This registry provides evidence-based
+  guidance and must not be treated as an automatic decision table.
+
+decision_policy:
+  briefing_first: true
+  human_approval_required: true
+  automatic_activation: false
+  maximum_primary_creative_skills: 1
+  allow_codex_pure: true
+  subjective_skills_combined_by_default: false
+
+priority:
+  - briefing
+  - approved_identity_and_content
+  - functional_requirements
+  - existing_project_and_approved_decisions
+  - accessibility
+  - qa
+  - skill_recommendations
+
+recommendation_rules:
+  primary_routes: 1
+  alternatives_maximum: 1
+  explain_reasoning: true
+  explain_risks: true
+  explain_conflicts: true
+  activate_only_after_human_approval: true
+
+routes:
+
+  codex-pure:
+    type: native
+    status: rc1-usable
+
+    evidence:
+      - MB01
+      - MB02
+      - MB03
+
+    best_fit:
+      - clear and detailed briefing
+      - corporate websites
+      - projects requiring low methodological interference
+      - greenfield projects with established identity
+      - redesigns where the briefing already defines the desired direction
+
+    observed_strengths:
+      - strong performance with restrictive corporate briefings
+      - good autonomous visual decisions
+      - strong redesign capability
+      - low workflow overhead
+
+    observed_risks:
+      - finish quality may vary with briefing quality
+      - creative implementations can introduce responsive or visual-state issues
+
+    qa_policy:
+      independent_qa_required: true
+
+
+  design-taste-frontend:
+    type: creative
+    status: experimental-usable
+
+    evidence:
+      - MB01
+      - MB02
+      - MB03
+
+    best_fit:
+      - greenfield projects with medium or high visual freedom
+      - editorial or composition-driven interfaces
+      - projects requiring stronger typography and visual hierarchy
+      - redesigns where reinterpretation is allowed
+
+    observed_strengths:
+      - strong typography
+      - strong editorial composition
+      - good mobile discipline
+      - can obey restrictive briefings despite opinionated defaults
+
+    observed_tendencies:
+      - generous spacing
+      - stronger visual reinterpretation
+      - editorial composition
+
+    observed_risks:
+      - excessive vertical spacing
+      - can become more generic in conservative corporate contexts
+      - visual reveal or motion decisions require independent review
+
+    qa_policy:
+      independent_qa_required: true
+      visual_qa_required: true
+
+
+  gpt-taste:
+    type: creative
+    status: experimental-controlled
+
+    evidence:
+      - MB02
+      - MB04
+
+    best_fit:
+      - high visual freedom
+      - conceptual exploration
+      - intentionally bold or experimental projects
+      - early exploration of distinctive visual directions
+
+    observed_strengths:
+      - very high visual variance
+      - strong conceptual impact
+      - avoids generic SaaS presentation
+      - expressive typography and composition
+
+    observed_tendencies:
+      - aggressive spacing
+      - strong typography
+      - large visual fields
+      - higher experimentation
+
+    observed_risks:
+      - contrast problems
+      - excessive page length
+      - fragile visual states
+      - decorative motion
+      - readability issues
+      - higher review cost
+
+    qa_policy:
+      independent_qa_required: true
+      visual_qa_required: true
+      increased_review_required: true
+
+
+  redesign-existing-projects:
+    type: specialized
+    status: rc1-usable
+
+    evidence:
+      - MB03
+
+    best_fit:
+      - existing functional websites
+      - high preservation requirements
+      - modernization without rebuilding the visual identity
+      - projects where content and architecture are already approved
+
+    observed_strengths:
+      - strongest preservation behavior observed
+      - controlled intervention
+      - good responsive discipline
+      - maintains information density
+
+    observed_tendencies:
+      - incremental modernization
+      - restrained visual intervention
+
+    observed_risks:
+      - may be too conservative when major transformation is desired
+
+    qa_policy:
+      independent_qa_required: true
+
+
+  impeccable-new-work:
+    implementation: impeccable
+    mode: new-work
+    type: specialized
+    status: rc1-usable
+
+    evidence:
+      - MB02
+
+    best_fit:
+      - greenfield projects
+      - projects seeking an authored visual system
+      - medium or high visual freedom
+      - projects where structured design reasoning is valuable
+
+    observed_strengths:
+      - strong visual system construction
+      - good relationship between concept and implementation
+      - strong responsive adaptation
+      - compact delivered code
+
+    observed_tendencies:
+      - structured workflow
+      - creation of auxiliary context files
+      - higher operational overhead
+
+    observed_risks:
+      - internal self-review is not sufficient for approval
+      - can miss real responsive defects
+
+    qa_policy:
+      independent_qa_required: true
+      visual_qa_required: true
+
+
+  impeccable-redesign:
+    implementation: impeccable
+    mode: redesign
+    type: specialized
+    status: rc1-usable
+
+    evidence:
+      - MB03
+
+    best_fit:
+      - existing sites where meaningful visual evolution is allowed
+      - projects requiring stronger conceptual direction
+      - redesigns where identity can evolve while preserving product truth
+
+    observed_strengths:
+      - coherent visual systems
+      - strong relationship between design and business context
+      - strong desktop/mobile consistency
+      - systematic redesign workflow
+
+    observed_tendencies:
+      - stronger visual intervention
+      - structured documentation
+      - higher workflow overhead
+
+    observed_risks:
+      - may change visual grammar substantially
+      - self-validation must not replace Hetech QA
+
+    qa_policy:
+      independent_qa_required: true
+      visual_qa_required: true
+
+
+  impeccable-critique:
+    implementation: impeccable
+    mode: critique
+    type: review
+    status: rc1-usable
+
+    evidence:
+      - MB04
+
+    best_fit:
+      - interface diagnosis
+      - UX review
+      - accessibility review
+      - responsive and CSS analysis
+      - pre-polish assessment
+
+    observed_strengths:
+      - strong structural diagnosis
+      - strong UX analysis
+      - useful responsive findings
+      - good motion and interaction analysis
+
+    observed_risks:
+      - visual analysis is limited without reliable rendering
+      - can over-prioritize issues caused by briefing constraints
+      - detector fallback is not sufficient evidence
+
+    modification_policy:
+      product_files_should_remain_unchanged: true
+
+    qa_policy:
+      diagnosis_is_not_final_approval: true
+
+
+  impeccable-polish:
+    implementation: impeccable
+    mode: polish
+    type: refinement
+    status: rc1-usable-with-qa
+
+    evidence:
+      - MB04
+
+    best_fit:
+      - finishing an existing implementation
+      - responsive refinements
+      - interaction states
+      - accessibility details
+      - preserving an approved visual direction
+
+    observed_strengths:
+      - low redesign tendency
+      - localized improvements
+      - good preservation
+      - limited code growth
+
+    observed_risks:
+      - may preserve structural visual problems
+      - does not necessarily find the same issues as critique
+      - self-validation is not sufficient
+
+    qa_policy:
+      independent_qa_required: true
+      visual_qa_required: true
