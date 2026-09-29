@@ -4,6 +4,16 @@
 
 Nome:
 
+Contexto:
+- Demo
+- Projeto real
+
+Categoria do demo:
+- Simple
+- Premium
+- Redesign
+- N/A
+
 Tipo:
 
 ## Modo de roteamento
@@ -11,6 +21,14 @@ Tipo:
 AUTO-RECOMMEND
 
 ## Sinais inferidos do briefing
+
+Categoria do demo:
+
+Nível de experiência:
+
+Intensidade de motion:
+
+Nível de interatividade:
 
 Tipo de trabalho:
 
@@ -70,6 +88,23 @@ Rota:
 Motivo:
 
 -
+
+## Diversidade de portfólio
+
+Critério secundário considerado?
+- [ ] não
+- [ ] sim
+
+Skill pouco utilizada em produção influenciou o desempate?
+- [ ] não
+- [ ] sim
+
+Justificativa:
+
+-
+
+> Diversidade de portfólio é critério secundário.
+> Nunca deve superar adequação ao BRIEF, risco ou capacidade técnica.
 
 ## Ativação
 

@@ -18,6 +18,18 @@ Uma Skill criativa principal é utilizada por vez, salvo decisão explícita.
 
 Codex puro é uma rota de produção válida.
 
+## Demo Taxonomy and Routing
+
+Simple, Premium and Redesign are routing signals, not Skill aliases.
+
+There is no fixed mapping between a demo category and a creative Skill.
+
+When two routes are equally suitable, portfolio diversity or limited
+production evidence for a qualified Skill may be used as a secondary
+tiebreaker.
+
+Brief fit, technical suitability and risk always take precedence.
+
 ## Codex Pure
 
 Uso:

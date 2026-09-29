@@ -43,6 +43,18 @@ O briefing contém:
 
 Ele possui prioridade superior às recomendações das Skills.
 
+## Demo Taxonomy Layer
+
+Simple, Premium and Redesign are planning metadata for demonstration projects.
+
+They describe the type of portfolio experience being demonstrated but do not
+directly select a Skill, framework, dependency or implementation strategy.
+
+Routing continues to interpret the actual Brief.
+
+Real client projects are governed by the approved client Brief rather than
+the demo taxonomy.
+
 ## Routing Layer
 
 O Skill Routing Registry não funciona como uma tabela fixa.

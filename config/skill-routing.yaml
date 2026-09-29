@@ -12,13 +12,18 @@ decision_policy:
   maximum_primary_creative_skills: 1
   allow_codex_pure: true
   subjective_skills_combined_by_default: false
+  demo_taxonomy_advisory_only: true
+  demo_taxonomy_applies_to_real_projects: false
+  real_project_experience_source: briefing
 
 priority:
   - briefing
   - approved_identity_and_content
   - functional_requirements
   - existing_project_and_approved_decisions
+  - security_and_technical_constraints
   - accessibility
+  - researched_references
   - qa
   - skill_recommendations
 
@@ -29,6 +34,79 @@ recommendation_rules:
   explain_risks: true
   explain_conflicts: true
   activate_only_after_human_approval: true
+  demo_category_is_routing_signal_only: true
+
+  portfolio_diversity:
+    enabled_as_tiebreaker: true
+    only_when_routes_are_equally_suitable: true
+    may_consider:
+      - portfolio diversity
+      - qualified Skill with limited production evidence
+      - practical evidence generation
+    never_override:
+      - briefing fit
+      - technical suitability
+      - risk
+
+demo_taxonomy:
+  scope: demonstration_projects_only
+
+  principle: >
+    The category describes the type of portfolio experience to demonstrate.
+    It is an auxiliary planning and routing signal and must not directly select
+    a Skill, stack, framework, dependency or interaction model.
+
+  categories:
+
+    simple:
+      intent: >
+        High-quality professional institutional experience without unnecessary
+        creative or interactive complexity.
+
+      signals:
+        - high visual quality
+        - clear information architecture
+        - strong typography and hierarchy
+        - controlled interaction
+        - restrained motion
+        - proportional JavaScript
+        - lower implementation complexity when sufficient
+        - high performance priority
+
+    premium:
+      intent: >
+        Richer, more authored and interactive digital experience while
+        preserving accessibility, mobile quality and technically healthy
+        implementation.
+
+      signals:
+        - richer interaction
+        - stronger motion presence
+        - authored composition
+        - custom components
+        - sophisticated navigation
+        - storytelling
+        - experimental layouts when justified
+        - additional dependencies when justified
+
+    redesign:
+      intent: >
+        Diagnosis-led transformation of an existing project, preserving what
+        still works and modernizing what the evidence and briefing justify.
+
+      signals:
+        - existing project
+        - diagnosis before implementation
+        - explicit preservation decisions
+        - identified problems
+        - transformation based on diagnosis
+        - before and after comparison
+
+  routing_policy:
+    direct_skill_mapping: false
+    brief_signals_override_category: true
+    category_may_increase_route_relevance: true
+    real_projects_use_client_brief: true
 
 routes:
 

@@ -58,6 +58,22 @@ Foram utilizados cenários controlados para estudar:
 
 Os benchmarks servem para formar perfis de uso, não para eliminar ferramentas.
 
+## Demo Taxonomy
+
+Demonstration projects may use three portfolio categories:
+
+- Simple
+- Premium
+- Redesign
+
+These categories describe the intended experience, not quality tiers and not
+fixed Skill mappings.
+
+The Brief remains the primary source for routing decisions.
+
+For real client projects, the approved client Brief defines the intended
+experience; the demo taxonomy does not constrain implementation.
+
 ## Estado
 
 RC1 — Release Candidate operacional.

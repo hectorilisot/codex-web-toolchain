@@ -4,6 +4,20 @@
 
 Projeto:
 Cliente:
+
+Contexto:
+- [ ] Projeto demonstrativo
+- [ ] Projeto real
+
+Categoria do projeto demonstrativo:
+- [ ] Simple
+- [ ] Premium
+- [ ] Redesign
+- [ ] N/A — projeto real
+
+> A categoria é uma classificação de portfólio para demos.
+> Em projetos reais, a experiência é definida pelo BRIEF aprovado do cliente.
+
 Tipo de projeto:
 - [ ] Site novo / greenfield
 - [ ] Redesign de site existente
@@ -172,6 +186,27 @@ Outros assets:
 - [ ] baixo
 - [ ] médio
 - [ ] alto
+
+### Nível de experiência desejado
+
+- [ ] contido
+- [ ] intermediário
+- [ ] rico / interativo
+- [ ] definido pelo cliente
+
+### Intensidade de motion
+
+- [ ] baixa
+- [ ] moderada
+- [ ] alta
+- [ ] definida pelo cliente
+
+### Nível de interatividade
+
+- [ ] baixo
+- [ ] moderado
+- [ ] alto
+- [ ] definido pelo cliente
 
 ### Preferências
 
