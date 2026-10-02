@@ -89,7 +89,7 @@ Motivo:
 
 -
 
-## Diversidade de portfólio
+## Diversidade de portfólio no Skill Routing
 
 Critério secundário considerado?
 - [ ] não
@@ -103,8 +103,9 @@ Justificativa:
 
 -
 
-> Diversidade de portfólio é critério secundário.
-> Nunca deve superar adequação ao BRIEF, risco ou capacidade técnica.
+> Esta seção trata apenas de diversidade de rotas/Skills no portfólio.
+> Diversidade visual é avaliada separadamente pelo Portfolio Visual Diversity Check.
+> O critério nunca deve superar adequação ao BRIEF, risco ou capacidade técnica.
 
 ## Ativação
 

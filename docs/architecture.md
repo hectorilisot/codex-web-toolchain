@@ -121,3 +121,16 @@ Release e deploy são ações separadas.
 Quando houver publicação por allowlist, somente arquivos explicitamente aprovados podem entrar no artefato.
 
 Não utilizar cópia da raiz do repositório como processo de publicação.
+
+## Portfolio Visual Diversity Layer
+
+For demonstration projects, the workflow may compare the proposed visual
+direction with recent portfolio work before implementation.
+
+The comparison is advisory and considers multiple visual dimensions rather than
+color alone.
+
+The mechanism does not select Skills, stack or technologies and does not impose
+fixed styles by industry.
+
+Real client projects remain governed by the approved client brief.

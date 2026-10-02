@@ -261,3 +261,15 @@ POSTPONED
 Status:
 
 FUTURE CREATIVE TOOLCHAIN
+
+## Visual Diversity and Skills
+
+Portfolio visual diversity is independent from Skill Routing.
+
+Codex Pure and qualified creative Skills follow the same rule.
+
+A Skill may influence process and creative reasoning, but it must not force a
+recurring aesthetic over the project brief.
+
+Visual diversity is secondary to briefing fit, technical suitability,
+accessibility and justified preservation decisions.

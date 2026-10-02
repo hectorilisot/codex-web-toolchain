@@ -216,6 +216,30 @@ Outros assets:
 
 -
 
+### Diversidade visual do portfólio
+
+Para projetos demonstrativos, a direção visual deve nascer do nicho,
+cenário e objetivos deste BRIEF.
+
+Antes da implementação visual principal, comparar a direção proposta com
+demos recentes registrados no histórico visual do Toolchain.
+
+Evitar repetir automaticamente, quando não houver justificativa no BRIEF:
+
+- família cromática dominante;
+- estratégia tipográfica;
+- estrutura de hero;
+- linguagem de componentes e cards;
+- tratamento de imagens;
+- ritmo de espaçamento e densidade;
+- tratamento de CTAs;
+- linguagem compositiva recorrente.
+
+Similaridade é permitida quando fizer sentido para o projeto.
+
+O objetivo é tornar a repetição consciente e justificada, não forçar
+diferença artificial.
+
 ### O que deve ser evitado
 
 -

@@ -55,6 +55,14 @@ Revisar screenshots full-page verificando:
 - responsividade;
 - estados de motion e reveal.
 
+For demonstration projects, visual review should also confirm that portfolio
+diversity was considered before implementation and that the final result does
+not contain unjustified visual repetition of recent demos.
+
+This is an editorial review, not a numerical or color-based automated test.
+
+Technical PASS remains independent from Visual PASS.
+
 ## Limitação conhecida RC1
 
 O runner ainda não identifica com segurança:

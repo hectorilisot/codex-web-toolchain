@@ -79,3 +79,24 @@ experience; the demo taxonomy does not constrain implementation.
 RC1 — Release Candidate operacional.
 
 O Toolchain passa a ser utilizado em projetos demonstrativos e pilotos de produção enquanto novos aprendizados alimentam revisões futuras.
+
+## Portfolio Visual Diversity
+
+Demo projects may use a lightweight visual diversity check between research and
+implementation.
+
+The check compares the proposed direction with recent portfolio work across
+palette, typography, hero composition, components, imagery, spacing, CTAs and
+overall visual language.
+
+It is advisory only.
+
+It does not:
+
+- prescribe colors by industry;
+- prohibit styles;
+- create creativity scores;
+- automatically select Skills;
+- create a new human approval gate.
+
+Briefing fit remains the primary authority.
